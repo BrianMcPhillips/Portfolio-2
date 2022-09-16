@@ -1,9 +1,10 @@
-import './App.css';
+import React from 'react';
+import Intro from '../Intro/Intro';
 
 const App = () => {
   return (
-    <div className="App">
-      <h1>Hello</h1>
+    <div>
+      <Intro />
     </div>
   );
 }
