@@ -10,7 +10,9 @@ const Product = () => {
         <div className="p-circle"></div>
         <div className="p-circle"></div>
       </div>
-      card
+      <a href="https://www.placecage.com" target='_blank' rel='noreferrer'>
+        <img src="https://www.placecage.com/300/300" alt="cage" />
+      </a>
     </div>
   );
 }
