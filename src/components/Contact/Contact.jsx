@@ -8,38 +8,50 @@ const Contact = () => {
 
   return (
     <div className='c'>
-      <div className="c-bg"></div>
-      <div className="c-wrapper">
-        <div className="c-left">
-          <h1 className="c-title">Let's discuss things</h1>
-          <div className="c-info">
-            <div className="c-info-item">
+      <div className='c-bg'></div>
+      <div className='c-wrapper'>
+        <div className='c-left'>
+          <h1 className='c-title'>Let's discuss things</h1>
+          <div className='c-info'>
+            <div className='c-info-item'>
               <img 
                 src={gmail} 
-                alt="Brian McPhillips Email" 
+                alt='Brian McPhillips Email' 
                 className='c-icon'
               />
               BMcPhillipsDev@gmail.com
             </div>
-            <div className="c-info-item">
+            <div className='c-info-item'>
               <img 
                 src={linkedin} 
-                alt="Brian McPhillips Linked-in page" 
+                alt='Brian McPhillips Linked-in page' 
                 className='c-icon'
               />
               https://Linkedin.com/in/BrianMcPhillips
             </div>
-            <div className="c-info-item">
+            <div className='c-info-item'>
               <img 
                 src={github} 
-                alt="Brian McPhillips github page" 
+                alt='Brian McPhillips github page' 
                 className='c-icon'
               />
               https://github.com/BrianMcPhillips
             </div>
           </div>
         </div>
-        <div className="c-right"></div>
+        <div className='c-right'>
+          <p className='c-desc'>
+            <b>What's your story?</b> Get in touch. Always freelancing if the right project
+            comes along. 
+          </p>
+          <form>
+            <input type='text' placeholder='Name' name='user_name' />
+            <input type='text' placeholder='Subject' name='user_subject' />
+            <input type='text' placeholder='Email' name='user_email' />
+            <textarea name="message" cols="30" rows="10"></textarea>
+            <button>Submit</button>
+          </form>
+        </div>
       </div>
     </div>
   );
