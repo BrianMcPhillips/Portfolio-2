@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './Contact.css';
 import gmail from '../../images/gmail.png';
 import linkedin from '../../images/linkedin.png';
 import github from '../../images/github.png';
 
 const Contact = () => {
-
+  const formRef = useRef();
+  const handleSubmit = e => {
+    e.preventDefault();
+    
+  }
   return (
     <div className='c'>
       <div className='c-bg'></div>
@@ -44,7 +48,7 @@ const Contact = () => {
             <b>What's your story?</b> Get in touch. Always freelancing if the right project
             comes along. 
           </p>
-          <form>
+          <form ref={formRef} onSubmit={handleSubmit}>
             <input type='text' placeholder='Name' name='user_name' />
             <input type='text' placeholder='Subject' name='user_subject' />
             <input type='text' placeholder='Email' name='user_email' />
